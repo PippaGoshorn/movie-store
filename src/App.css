@@ -35,7 +35,7 @@ nav {
   height: 17vh;
   width: 100vw;
   font-size: 1.5rem;
-  margin-bottom: 0.3%;
+  padding-bottom: 0.8rem;
 }
 
 .navbar-row1-promo {
@@ -182,7 +182,7 @@ nav img {
   width: 100vw;
   height: 60vh;
   contain: content;
-  margin-top: 0.4rem;
+  margin-top: 0rem;
 }
 
 .slider div {
