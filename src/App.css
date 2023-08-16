@@ -45,7 +45,7 @@ nav {
   font-size: 1rem;
   background-color: var(--lightGrey);
   height: 2.5vh;
-  padding-bottom: 0.4rem;
+  padding: 0.4rem;
 } 
 
 .navbar-row2 {
