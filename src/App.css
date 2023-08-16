@@ -36,6 +36,7 @@ nav {
   width: 100vw;
   font-size: 1.5rem;
   padding-bottom: 0.8rem;
+  margin-bottom: 2rem;
 }
 
 .navbar-row1-promo {
@@ -559,8 +560,8 @@ footer {
   }
   
   .highlights-tile {
-    width: 10rem;
-    height: 6rem;
+    width: 15rem;
+    height: 10rem;
     margin: 1rem;
   }
 
@@ -592,4 +593,27 @@ footer {
     display: none;
   }
 
+  nav img {
+    width: 40%;
+    max-height: 70%;
+    padding-left: 1rem;
+  }
+
 }
+
+/* MEDIA QUERY - MOBILE */
+/* Highlights section resizing */
+@media screen and (max-width: 476px) {
+  .highlights-tile {
+    width: 12rem;
+    height: 8rem;
+    margin: 1rem;
+  }
+} 
+@media screen and (max-width: 392px) {
+  .highlights-tile {
+    width: 10.5rem;
+    height: 6.8rem;
+    margin: 1rem;
+  }
+} 
