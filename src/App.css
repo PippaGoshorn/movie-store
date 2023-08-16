@@ -1,38 +1,595 @@
+/* Global stylesheet  */
+
+/* Project colours */
+:root {
+  --primaryPink: #E363AA;
+  --secondaryYellow: #F8DB21;
+  --textBlack: rgb(26, 25, 25);
+  --lightGrey: rgb(224, 224, 224);
+}
+
 .App {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  max-width: 1600px;
+  overflow: auto;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  height: 17vh;
+  width: 100vw;
+  font-size: 1.5rem;
+  margin-bottom: 0.3%;
+}
+
+.navbar-row1-promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: var(--lightGrey);
+  height: 2.5vh;
+  padding-bottom: 0.4rem;
+} 
+
+.navbar-row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.favourites-lockup {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.login-lockup {
+  font-size: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.login-menu-text {
+  padding-left: 0.5rem;
+}
+
+.favourites-menu-text {
+  padding-left: 0.5rem;
+}
+
+.login-lockup:hover {
+  cursor: pointer;
+}
+
+.favourites-lockup:hover {
+  cursor: pointer;
+}
+
+.favourites-icon {
+  font-size: 1.3rem;
+  color: var(--primaryPink);
+}
+
+.login-icon {
+  font-size: 1.3rem;
+  color: var(--primaryPink);
+}
+
+.shopping-cart {
+  margin-right: 2rem;
+  color: var(--primaryPink);
+}
+
+.shopping-cart:hover {
+  cursor: pointer;
+}
+
+.navbar-row3 {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primaryPink);
+  color: white;
+  font-size: 1rem;
+  height: 2.5rem;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.navbar-row3 ul {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.1rem;
+  align-items: center;
+  margin-left: 0;
+  padding-left: 2rem;
+}
+
+.navbar-row3 li {
+  display: inline-flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  padding-right: 25px;
+}
+
+.navbar-li:hover {
+  cursor: pointer;
+}
+
+nav img {
+  width: 30%;
+  max-height: 70%;
+  padding-left: 2rem;
+}
+
+.search-bar {
+  width: 40%;
+}
+
+.search-bar input {
+  border-radius: 15px;
+  font-size: 1rem;
+  border: 1px solid var(--lightGrey);
+  width: 60%;
+  height: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.search-bar button {
+  border-radius: 15px;
+  font-size: 1rem;
+  width: 50px;
+  background-color: var(--primaryPink);
+  color: white;
+  border: none;
+  margin-left: 5px;
+  height: 1.5rem;
+}
+
+.search-bar button:hover {
+  cursor: pointer;
+}
+
+.search-bar input {
+  padding-left: 15px;
+}
+
+/* Carousel styling */
+.slider {
+  width: 100vw;
+  height: 60vh;
+  contain: content;
+  margin-top: 0.4rem;
+}
+
+.slider div {
+  width: 100%;
+  height: 100%;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider__overlay {
+  display: none;
+}
+
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  contain: content;
+  width: 100%;
+  height: 15rem;
+}
+
+.highlights-tile {
+  width: 17rem;
+  height: 11rem;
+  border-radius: 15px;
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.highlights-tile p {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600; 
+  text-shadow: 2px 2px var(--primaryPink);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.highlights-new-releases {
+  background-image: url(./img/jurassic-world-dominion.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.highlights-bestsellers {
+  background-image: url(./img/frozen.jpeg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.highlights-top-picks {
+  background-image: url(./img/good-will-hunting.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.highlights-sale {
+  background-image: url(./img/la-la-land.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.genre-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.genre-button {
+  border-radius: 15px;
+  background-color: var(--lightGrey);
+  border: 1px solid var(--primaryPink);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.genre-button:hover {
+  background-color: var(--secondaryYellow);
+  color: var(--primaryPink);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Stays pink if clicked only on mobile */
+.genre-button:active {
+  background-color: var(--secondaryYellow);
+  color: white;
+  font-weight: 600;
+}
+
+.genre-button.all {
+  font-weight: 600;
+}
+
+h1 {
+  margin-top: 2rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.browse-all-DVDs {
+  background-color: rgb(248, 250, 235);
+  align-items: center;
+  justify-content: center;
+  contain: content;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.all-dvds-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: 2.5rem;
+  background-color: var(--primaryPink);
+  width: 100vw;
+}
+
+.dvd-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding-bottom: 2rem;
+}
+
+.dvd-tile {
+  width: 220px;
+  height: 450px;
+  background-color: white;
+  border: 1px solid var(--primaryPink);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
+  margin: 0.75rem 0.75rem 0.75rem 0.75rem;
+}
+
+.dvd-tile-img {
+  width: 180px;
+  height: 60%;
+  margin-bottom: 1rem;
+}
+
+.dvd-tile ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  padding-inline-start: 0;
+}
+
+.dvd-tile li {
+  list-style: none;
+}
+
+.movie-title {
+  font-weight: 600;
+  /* font-size: 1.1rem; */
+  color: var(--primaryPink);
+}
+
+.stock-info {
+  font-style: italic;
+}
+
+.buy-button {
+  background-color: var(--primaryPink);
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
   color: white;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  width: 75%; 
 }
 
-.App-link {
-  color: #61dafb;
+.buy-button:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Filter by genre DVD tile display styling */
+.dvd-tile.filter-genre {
+  position: relative;
+}
+
+.buy-button.filter-genre {
+  position: absolute;
+  top: 400px;
+}
+
+.promo-box {
+  background-color: var(--secondaryYellow);
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+.promo-box p {
+  margin-bottom: 1.5rem;
+  margin-top: 1.1rem;
+}
+
+.email-input {
+  border-radius: 15px;
+  font-size: 1rem;
+  border: 1px solid var(--lightGrey);
+  width: 25%;
+  height: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  padding-left: 1rem;
+}
+
+.email-signup-button {
+  border-radius: 15px;
+  font-size: 1rem;
+  width: 100px;
+  background-color: var(--primaryPink);
+  color: white;
+  border: none;
+  margin-left: 5px;
+  height: 1.5rem;
+}
+
+.email-signup-button:hover {
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-button {
+  background-color: var(--secondaryYellow);
+  color: var(--primaryPink);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 15px;
+  border: 1px solid var(--primaryPink);
+}
+
+.contact-button:hover {
+  cursor: pointer;
+}
+
+/* MEDIA QUERY - RESIZING HEIGHT OF HIGHLIGHTS SECTION FOR SMALLER DESKTOP WINDOW (margin issues on resize) */
+@media screen and (max-width: 1120px) {
+.highlights {
+  height: 30rem;
+}
+}
+
+/* MEDIA QUERY - RESIZING CAROUSEL FOR SMALLER DESKTOP WINDOW */
+@media screen and (max-width: 800px) {
+  .slider {
+    height: 50vh;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (max-width: 700px) {
+  .slider {
+    height: 45vh;
   }
+}
+@media screen and (max-width: 600px) {
+  .slider {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .slider {
+    height: 35vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .slider {
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .slider {
+    height: 25vh;
+  }
+}
+
+/* MEDIA QUERY - RESIZING WINDOW DESKTOP NAVBAR RENDERING */
+@media screen and (max-width: 930px) {
+  .favourites-menu-text {
+    display: none;
+  }
+  .login-menu-text {
+    display: none;
+  }
+  .login-icon {
+    margin-left: 0.75rem;
+  }
+}
+
+/* MEDIA QUERY - MOBILE */
+/* 2 tiles wide for Browse all DVDs section */
+@media screen and (max-width: 564px) { 
+    .dvd-tiles {
+    padding-bottom: 1rem;
+    height: 100%;
+    contain: content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 1rem 0.5rem 0rem;
+  }
+  .dvd-tile {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    contain: content;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+  
+  .dvd-tile-img {
+    width: 130px;
+    height: 150px;
+    margin-bottom: 0.5rem;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .dvd-tile.filter-genre {
+    height: 320px;
+    padding-top: 0;
+  }
+
+  .dvd-tile-img.filter-genre {
+    padding-top: 0;
+    margin-top: 0;
+    height: 160px;
+  }
+
+  .buy-button.filter-genre {
+    position: absolute;
+    top: 290px;
+  }
+  
+  .highlights-tile {
+    width: 10rem;
+    height: 6rem;
+    margin: 1rem;
+  }
+
+  .favourites-menu-text {
+    display: none;
+  }
+
+  .login-menu-text {
+    display: none;
+  }
+
+  .favourites-icon {
+    margin-right: 1rem;
+  }
+
+  .shopping-cart {
+    margin-right: 1.25rem;
+  }
+
+  .search-bar-button {
+    display: none;
+  }
+
+  .login-icon {
+    margin-left: 0.2rem;
+  }
+
+  .help {
+    display: none;
+  }
+
 }
