@@ -639,8 +639,8 @@ footer {
     padding: 0;
   }
   nav {
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 @media screen and (max-width: 476px) {
@@ -656,8 +656,8 @@ footer {
     padding: 0;
   }
   nav {
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 } 
 @media screen and (max-width: 392px) {
