@@ -19,7 +19,7 @@ import jumpStreet21 from "./img/21-jump-street.jpg";
 import laLaLand from "./img/la-la-land.jpg";
 import mammaMia from "./img/mamma-mia.jpg";
 import frozen from "./img/frozen.jpeg";
-import ViewAllGenresButton from './components/ViewAllGenresButton';
+import ViewAllGenresButton2 from './components/ViewAllGenresButton2';
 
 function App() {
 //   const [count, setCount] = useState(0);
@@ -67,7 +67,7 @@ function App() {
             <GenreButton genre="Thriller"/>
             <GenreButton genre="Action"/>
             <GenreButton genre="Sci-Fi"/>
-            <ViewAllGenresButton className="genre-button all" />
+            <ViewAllGenresButton2 className="genre-button all" />
           </div>
         </div>
         <div className="dvd-tiles" id="genre-filter"></div>

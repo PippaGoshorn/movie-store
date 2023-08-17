@@ -1,6 +1,6 @@
 import { movies_data } from "../movie-data";
 
-function GenreButton(props){
+function GenreButton2(props){
     let movieArray = movies_data;
     function handleClick(e) {
         e.preventDefault();
@@ -9,7 +9,7 @@ function GenreButton(props){
         tile.innerHTML = "";
         genreFilter.innerHTML = "";
         Object.entries(movieArray).forEach((item, i)=>{
-            if (item[1].genre === e.target.outerText) {
+            if (item[1].genre.length > 1) {
             let img = document.createElement("img");
             let movieTitle = document.createElement("li");
             let relYear = document.createElement("li");
@@ -55,11 +55,10 @@ function GenreButton(props){
 
     return (
         <div>
-            <button className="genre-button" onClick={(e)=>handleClick(e)}>
-                {props.genre}</button>
+            <button className="genre-button all" onClick={(e)=>handleClick(e)}>
+                {props.genre}View all</button>
         </div>
     )
 }
 
-export default GenreButton;
-
+export default GenreButton2;

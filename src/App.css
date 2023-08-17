@@ -656,8 +656,8 @@ footer {
     padding: 0;
   }
   nav {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 } 
 @media screen and (max-width: 392px) {
