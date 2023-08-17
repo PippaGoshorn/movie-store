@@ -380,7 +380,7 @@ h3 {
   color: white;
   padding: 0.5rem;
   margin-top: 1rem;
-  width: 75%; 
+  width: 75%;
 }
 
 .buy-button:hover {
@@ -464,7 +464,7 @@ footer {
 }
 }
 
-/* MEDIA QUERY - RESIZING CAROUSEL FOR SMALLER DESKTOP WINDOW */
+/* MEDIA QUERY - RESIZING CAROUSEL FOR SMALLER DESKTOP WINDOW & MOBILE */
 @media screen and (max-width: 800px) {
   .slider {
     height: 50vh;
@@ -604,16 +604,26 @@ footer {
 /* MEDIA QUERY - MOBILE */
 /* Highlights section resizing */
 @media screen and (max-width: 476px) {
+  .highlights {
+    height: 18rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   .highlights-tile {
     width: 12rem;
     height: 8rem;
-    margin: 1rem;
+    margin: 0.5rem;
+    padding: 0;
+  }
+  nav {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 } 
 @media screen and (max-width: 392px) {
   .highlights-tile {
     width: 10.5rem;
     height: 6.8rem;
-    margin: 1rem;
+    margin: 0.5rem;
   }
 } 
