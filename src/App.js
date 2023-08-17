@@ -1,10 +1,7 @@
 import './App.css';
 import React from 'react';
 import NavbarSearch from './components/NavbarSearch';
-// import HeroCarousel from './components/HeroCarousel';
 import HeroSlideshow from './components/HeroSlideshow';
-// import CarouselSlick from './components/CarouselSlick';
-// import Slider from './components/CarouselSlick';
 import DVDTile from './components/DVDTile';
 import GenreButton from './components/GenreButton';
 // import {useEffect, useState} from 'react';

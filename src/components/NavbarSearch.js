@@ -1,4 +1,5 @@
 import movieStoreLogo from "../img/movie-store-logo.png";
+import SearchBar from "./SearchBar";
 import FavouritesMenuLockup from "./FavouritesMenuLockup";
 import LoginMenuLockup from "./LoginMenuLockup";
 import { FaShoppingCart } from "react-icons/fa";
@@ -11,13 +12,10 @@ function NavbarSearch(){
             </div>
             <div className="navbar-row2">
                 <img src={movieStoreLogo} alt="movie store logo"></img>
-                <form className="search-bar">
-                    <input className="search-bar-input" type="text" placeholder="Search..." name="search"></input>
-                    <button className="search-bar-button" type="submit">Go</button>
-                </form>
+                <SearchBar />
                 <FavouritesMenuLockup />
                 <LoginMenuLockup />
-                <FaShoppingCart className="shopping-cart" />  
+                <FaShoppingCart className="shopping-cart" />
             </div>
             <div className="navbar-row3">
                 <ul>
