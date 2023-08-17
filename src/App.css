@@ -457,13 +457,6 @@ footer {
   cursor: pointer;
 }
 
-/* MEDIA QUERY - RESIZING HEIGHT OF HIGHLIGHTS SECTION FOR SMALLER DESKTOP WINDOW (margin issues on resize) */
-@media screen and (max-width: 1120px) {
-.highlights {
-  height: 30rem;
-}
-}
-
 /* MEDIA QUERY - RESIZING CAROUSEL FOR SMALLER DESKTOP WINDOW & MOBILE */
 @media screen and (max-width: 800px) {
   .slider {
@@ -603,6 +596,53 @@ footer {
 
 /* MEDIA QUERY - MOBILE */
 /* Highlights section resizing */
+@media screen and (max-width: 1120px) {
+  .highlights {
+    height: 18rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .highlights-tile {
+    width: 17rem;
+    height: 11rem;
+    margin: 0.5rem;
+    padding: 0.75rem;
+  }
+}
+@media screen and (max-width: 1092px) {
+  .highlights {
+    height: 30rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .highlights-tile {
+    width: 18rem;
+    height: 11rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  nav {
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+}
+@media screen and (max-width: 616px) {
+  .highlights {
+    height: 18rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .highlights-tile {
+    width: 12rem;
+    height: 8rem;
+    margin: 0.5rem;
+    padding: 0;
+  }
+  nav {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 @media screen and (max-width: 476px) {
   .highlights {
     height: 18rem;
