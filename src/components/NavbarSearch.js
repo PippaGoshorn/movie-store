@@ -7,7 +7,7 @@ function NavbarSearch(){
     return (
         <nav>
             <div className="navbar-row1-promo">
-                <p>Free shipping on orders over £50</p>
+                <p>Free shipping on orders over £25</p>
             </div>
             <div className="navbar-row2">
                 <img src={movieStoreLogo} alt="movie store logo"></img>

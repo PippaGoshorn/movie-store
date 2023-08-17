@@ -20,6 +20,7 @@ import laLaLand from "./img/la-la-land.jpg";
 import mammaMia from "./img/mamma-mia.jpg";
 import frozen from "./img/frozen.jpeg";
 import ViewAllGenresButton2 from './components/ViewAllGenresButton2';
+import EmailSignup from './components/EmailSignup';
 
 function App() {
 //   const [count, setCount] = useState(0);
@@ -99,12 +100,9 @@ function App() {
       </section>
 
       <section className="promo-box">
-        <h3>Receive a 10% discount on your first order</h3>
-        <p>Join the Movie Store Video Club to get 10% off your first order, as well as the latest product updates and special offers, delivered right to your inbox.</p>
-        <form className="email-signup">
-          <input type="text" placeholder="Your email" name="email-signup" className="email-input"></input>
-          <button type="submit" className="email-signup-button">Subscribe</button>
-        </form>
+        <h3>Receive a 15% discount on your first order</h3>
+        <p>Join the Movie Store Video Club to get 15% off your first order, as well as the latest product updates and special offers, delivered right to your inbox.</p>
+        <EmailSignup />
       </section>
 
       <footer>
@@ -123,9 +121,7 @@ function App() {
           <div className="corporate-info">
             <h4>Corporate Info</h4>
             <p>About Us</p>
-            <p>Brands</p>
             <p>Affiliates</p>
-            <p>Investors</p>
             <p>Cookies</p>
           </div>
           <div className="location">
